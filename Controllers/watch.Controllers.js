@@ -11,7 +11,7 @@ const setSeedData = async () => {
             title: elem.title,
             description: elem.description,
             toUSD: elem.toUSD,
-            image: elem.image,
+            image_url: elem.image_url,
         });
     });
     setData.map(elem => elem.save());
@@ -75,7 +75,7 @@ const updateFav = async (req, res) => {
             elem.title = watchItem.title;
             elem.description = watchItem.description;
             elem.toUSD = watchItem.toUSD;
-            elem.image = watchItem.image;
+            elem.image_url = watchItem.image_url;
         }
     });
     user.save();

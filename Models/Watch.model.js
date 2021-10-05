@@ -6,7 +6,7 @@ const watchSchema = new mongoose.Schema({
     title: String,
     description: String,
     toUSD: String,
-    image: String,
+    image_url: String,
 });
 
 const userSchema = new mongoose.Schema({
